@@ -16,7 +16,7 @@ class Github_Mail_Scraper:
 	def build_opt_parser(self):
 		self.parser = optparse.OptionParser(usage="Usage: %prog -u USERNAME [-t TIMEOUT]", version="Github Email Scraper")
 
-		self.parser.add_option("-u", "--username", dest="username", type="string", help="Username of account we want to download stories from")
+		self.parser.add_option("-u", "--username", dest="username", type="string", help="Username of account we want to search the email from")
 		self.parser.add_option("-t", "--timeout", dest="timeout", type="string", help="Requests timeout. Default : 30 seconds")
 		self.parser.add_option("-a", "--api", dest="api", type="string", help="Github API key or token to use")
 
